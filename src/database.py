@@ -4,7 +4,7 @@ import sqlite3
 def create_tables():
     'Создает таблицы expenses и income в базе данных, если они еще не существуют.'
 
-    connect = sqlite3.connect('data/finanse.db')
+    connect = sqlite3.connect('data/finance.db')
     c = connect.cursor()
 
     c.execute('''
