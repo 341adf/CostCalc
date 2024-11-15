@@ -17,7 +17,7 @@ def create_tables():
             )
     ''')
 
-    c.income('''
+    c.execute('''
         CREATE TABLE IF NOT EXISTS income (
               id INTEGER PRIMARY KEY AUTOINCREMENT,
               date TEXT,
